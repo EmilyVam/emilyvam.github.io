@@ -1,41 +1,50 @@
-body {
-    margin: 0px;
+html, body {
+    margin: 0;
     font-family: Raleway;
+    padding: 0;
+}
+
+.div {
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 100%;
+}
+
+#background {
+	position: fixed;
+	padding: 0 !important;
+	z-index: -100;
+	margin-top: 0%;
 }
 
 #background img{
-	position: fixed;
+	position: relative;
+	margin-top: 0%;
 	height: 100%;
 	width: 100%;
-	z-index: -1;
 }
 
-#overlay {
-	position: fixed;
-	top: 20%;
-    width: 100%;
-    height: 30%;
-}
 
 #topbar {
 	position: fixed;
-	height: 8%;
+	height: 7%;
 	width: 100%;
 	z-index: 100;
-	opacity: 1;
+	opacity: 0.9;
+	background-color: transparent;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
 
-#topbar-overlay {
+/*#topbar-overlay {
 	position: fixed;
 	top: 8%;
 	height: 12%;
 	width: 100%;
 	z-index: 99;
-	opacity: 0;
+	opacity: 1;
 	background: linear-gradient(white, transparent);
 	background: -webkit-linear-gradient(white, transparent);
 	background: -moz-linear-gradient(white, transparent);
@@ -44,7 +53,7 @@ body {
 	-moz-transition: all 0.6s;
 	-o-transition: all 0.6s;
 	transition: all 0.6s;
-}
+}*/
 
 #topbar-item {
 	position: relative;
@@ -52,8 +61,8 @@ body {
 	float: right;
 	margin: 5px;
 	display: inline-block;
-	color: rgb(255, 54, 130);
-	font-size: 20px;
+	color: rgb(77, 208, 210);
+	font-size: 15px;
 	padding: 10px;
 	background-color: transparent;
 	font-weight: 400;
@@ -63,25 +72,40 @@ body {
 }
 
 #topbar-item:hover {
-    border: 1.5px solid rgb(255, 54, 130);
+    border: 1px solid rgb(77, 208, 210);
     background: transparent;
-    color: rgb(219, 60, 134);
+    color: rgb(77, 208, 210);
     cursor: pointer;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
+}
+
+#name-bar {
+	position: relative;
+	top: 15%;
+	width: 100%;
+	height: 10%;
+	background-color: transparent;
+}
+
+#name-overlay {
+	position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.2;
 }
 
 
 #name {
-    position: fixed;
-	color: rgb(255, 54, 130);
-	top: 25%;
-	left: 38.5%;
-	font-size: 70px;
-    font-family: Lobster;
+	position: relative;
+	color: rgb(210, 35, 5);
+	color: rgb(77, 208, 210);
+	top: -90%;
+	margin-left: 32%;
+	font-size: 45px;
+    font-family: Bitter;
+    font-weight: 400;
     z-index: 101;
     opacity: 1;
-    display: none;
 }
 
 #name-drop {
@@ -114,7 +138,7 @@ body {
 #school {
 	position: relative;
 	padding:10px;
-	font-size: 90px;
+	font-size: 70px;
 	font-weight: 400;
 	opacity: 1;
 	left: 10%;
@@ -125,7 +149,7 @@ body {
 	position: relative;
 	top:55%;
 	padding-left: 10px;
-	font-size: 60px; 
+	font-size: 40px; 
     font-weight: 300;
     opacity: 1;
     left: 10%;
@@ -135,18 +159,53 @@ body {
 #line {
 	position: fixed;
 	background-color: white;
-    height: 40%;
-    width: 3px;
+    height: 30%;
+    width: 2px;
     left: 68%;
     top: 40%;
 }
 
 #content {
 	position: relative;
-	background-color: transparent;
 	width: 100%;
 	height: 200%;
-	top: 100%; 
+	top: 65%; 
+	background-color: white;
+	z-index: 2;
+}
+
+#content-bar {
+	position: relative;
+	width: 100%;
+	height: 15%;
+	top: -2%;
+	background-color: rgb(77, 208, 210);
+	
+	opacity: 0.5;
+}
+
+#content-overlay {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	background-color: transparent;
+	opacity: 1;
+}
+
+#content-card {
+	position: relative;
+	margin-left: 0.5%;
+	margin-top: 30%;
+	height: 100%;
+	width: 23%;
+	display: inline-block;
+	background-color: black;
+	font-weight: 400;
+	cursor: pointer;
+	border: 5px solid rgb(77, 208, 210);
+	z-index: 100;
+	opacity: 0.3;
 }
 
 #edge-container {
@@ -160,7 +219,7 @@ body {
 
 .edges {
 	position: relative;
-	width: 120%;
+	width: 100%;
 	height: 700px;
 	left: -10%;
 	border-radius: 50%;

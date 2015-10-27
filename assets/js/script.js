@@ -28,7 +28,7 @@ $(document).ready(function(){
 		if (height < 644) {
 			//$("#name").css("-webkit-transform", "scale(" + size + ")");
 			//$("#name").css("top", "calc(30% - " + height/20 + "%)");
-			$("#background").css("width", 100 + height*0.05 + "%").css("margin-left", -height*0.025 + "%").css("height", 100 + height*0.04 + "%");
+			//$("#background").css("width", 100 + height*0.05 + "%").css("margin-left", -height*0.025 + "%").css("height", 100 + height*0.04 + "%");
 			//$("#name").css("font-size", 45 - height*0.1 + "px").css("margin-left", 32 - height*0.05 + "%");
 			// $("#name-drop").css("top", drop + "%");
 			// $("#name-line").css("top","calc(40% - " + height/20 + "%)")

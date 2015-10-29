@@ -19,6 +19,13 @@ $(document).ready(function(){
 
 	$(window).scroll(function() {
 		var height = $(window).scrollTop();
+		var content = $("#content").offset().top;
+		var topbar = $("#topbar");
+		console.log(height + "  " + content);
+
+		if(content <= height) {
+			topbar.fadeIn(500);
+		}
 		//size = 1-height/1400;
 		//l2 = - height/80 - 60;
 		//l3 = - height/40 - 120;

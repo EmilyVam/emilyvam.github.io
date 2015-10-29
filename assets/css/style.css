@@ -5,8 +5,8 @@ html, body {
 }
 
 .div {
-	margin-left: 0px;
-	margin-right: 0px;
+	margin-left: 0px auto;
+	margin-right: 0px auto;
 	width: 100%;
 }
 
@@ -26,93 +26,73 @@ html, body {
 	width: 100%;
 }
 
-
 #topbar {
 	position: fixed;
+	background-color: white;
 	height: 8%;
 	width: 100%;
 	z-index: 100;
-	opacity: 1;
-	background-color: white;
+	display: none;
+}
+
+.topbar {
+	position: relative;
+	display: inline-block;
+	font-weight: 300;
+	font-size: 18px;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-top: 0px;
+	background-color:  transparent;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
 
-/*#topbar-overlay {
-	position: fixed;
-	top: 8%;
-	height: 12%;
-	width: 100%;
-	z-index: 99;
-	opacity: 1;
-	background: linear-gradient(white, transparent);
-	background: -webkit-linear-gradient(white, transparent);
-	background: -moz-linear-gradient(white, transparent);
-	background: -o-linear-gradient(white, transparent);
-	-webkit-transition: all 0.6s;
-	-moz-transition: all 0.6s;
-	-o-transition: all 0.6s;
-	transition: all 0.6s;
-}*/
-
 #topbar-item {
-	position: relative;
-	top:1px;
 	float: right;
-	margin: 5px;
-	display: inline-block;
 	color: rgb(77, 208, 210);
-	font-size: 18px;
-	padding: 10px;
-	background-color: transparent;
-	font-weight: 300;
 	cursor: pointer;
-	border: 1.5px solid transparent;
-	z-index: 100;
+	height: 0%;
+	border: 3px solid transparent;
 }
 
 #topbar-item:hover {
-    border: 1px solid rgb(77, 208, 210);
-    background: transparent;
-    color: rgb(77, 208, 210);
+    background: rgb(77, 208, 210);
+    color: white;
     cursor: pointer;
+    height: 60%;
+    border-bottom-left-radius: 30%; 
+    border-bottom-right-radius: 30%;
+    border: 3px solid;
 }
 
 #topbar-profile {
-	position: relative;
 	float: left;
-	left: 2%;
-	z-index: 100;
-	display: inline-block;
+	margin-left: 20px;
+	margin-top: 0px;
+	padding: 0px;
 	height: 100%;
-	width: 0 auto;
 }
 
 #topbar-profile img{
 	height: 100%;
-	width: 0 auto;
 }
 
 #topbar-firstname {
-	position: relative;
 	float: left;
-	margin-left: 40px;
 	color: rgb(244, 105, 11);
-	font-size: 20px;
-	font-weight: 300;
-	top: 30%;
+	padding-right: 0px;
 }
 
 #topbar-lastname {
-	position: relative;
 	float: left;
-	margin-left: 5px;
 	color: gray;
-	font-size: 20px;
 	font-weight: 200;
-	top: 30%;
+	padding-left: 5px;
 }
 
 #profile_pic img{
@@ -164,62 +144,6 @@ html, body {
 	opacity: 0.7;
 }
 
-#name-drop {
-	position:fixed;
-    width: 50px;
-    top: 40%;
-    left: 50.15%;
-    z-index: 10;
-    display: none;
-}
-
-#name-line {
-	position: fixed;	
-	height: 10px;
-	top: 40%;
-	left: 52%;
-	z-index: 10;
-	border-right: 3px dotted rgb(255, 54, 130);
-	display: none;
-}
-
-#summary {
-	position: fixed;
-	top: 40%;
-	left: 70%;
-	font-family: Yanone Kaffeesatz;
-	color: white;
-}
-
-#school {
-	position: relative;
-	padding:10px;
-	font-size: 70px;
-	font-weight: 400;
-	opacity: 1;
-	left: 10%;
-	display: none;
-}
-
-.major {
-	position: relative;
-	top:55%;
-	padding-left: 10px;
-	font-size: 40px; 
-    font-weight: 300;
-    opacity: 1;
-    left: 10%;
-    display: none;
-}
-
-#line {
-	position: fixed;
-	background-color: white;
-    height: 30%;
-    width: 2px;
-    left: 68%;
-    top: 40%;
-}
 
 #content {
 	position: relative;
@@ -239,14 +163,20 @@ html, body {
 	opacity: 0.7;
 }
 
-#content-overlay {
+#education {
 	position: relative;
 	width: 100%;
-	height: 100%;
-	top: 0%;
-	background-color: transparent;
+	height: 40%;
+	overflow: hidden;
+
+}
+
+#education img {
+	width: 100%;
+	height: 0 auto;
 	opacity: 1;
 }
+
 
 #content-card {
 	position: relative;
@@ -261,44 +191,6 @@ html, body {
 	border: 5px solid rgb(77, 208, 210);
 	z-index: 100;
 	opacity: 0.3;
-}
-
-#edge-container {
-	position: relative;
-	top: -5%;
-	width: 100%;
-	height: 1000px;
-	background-color: transparent;
-	overflow: hidden;
-}
-
-.edges {
-	position: relative;
-	width: 100%;
-	height: 700px;
-	left: -10%;
-	border-radius: 50%;
-	background-color: white;
-}
-
-#edge-l1 {
-	top: 0%;
-	opacity: 0.3;
-}
-
-#edge-l2 {
-	top: -60%;
-	opacity: 0.5;
-}
-
-#edge-l3 {
-	top: -120%;
-	opacity: 0.7;
-}
-
-#edge-l4 {
-	top: -125%;
-	opacity: 1;
 }
 
 
@@ -350,20 +242,6 @@ html, body {
     -o-box-shadow: 0px 30px 15px -10px rgb(255,54,100);
     -moz-box-shadow: 0px 30px 15px -10px rgb(255,54,100);
     -webkit-box-shadow: 0px 30px 15px -10px rgb(255,54,100);
-}
-
-#wave-container {
-	position: relative;
-	overflow: hidden;
-	width: 100%;
-	left: 0;
-	z-index: 10;
-	top: -800px;
-}
-
-#wave {
-	width: 100%;
-	height: 15%;
 }
 
 .tree {

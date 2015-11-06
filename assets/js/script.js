@@ -24,7 +24,7 @@ $(document).ready(function(){
 		console.log(height + "  " + content);
 
 		if(content <= height) {
-			topbar.fadeIn(500);
+			topbar.fadeIn(800);
 		}
 		//size = 1-height/1400;
 		//l2 = - height/80 - 60;

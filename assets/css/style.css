@@ -150,7 +150,7 @@ html, body {
 	width: 100%;
 	height: 200%;
 	top: 100%; 
-	background-color: transparent;
+	background-color: white;
 }
 
 #content-bar {
@@ -170,7 +170,7 @@ html, body {
 
 #education {
 	position: relative;
-	top: 10%;
+	top: 0%;
 	width: 100%;
 	height: 40%;
 	overflow: hidden;
@@ -180,6 +180,32 @@ html, body {
 #education img {
 	width: 100%;
 	height: 0 auto;
+}
+
+.education {
+	position: relative;
+	text-align: center;
+	color: white;
+	font-family: Raleway;
+	margin: 10px;
+}
+
+#school {
+	top: -80%;
+	font-size: 90px;
+	font-weight: 200;
+}
+
+#major {
+	top: -65%;
+	font-weight: 500;
+	font-size: 30px;
+}
+
+#graduate {
+	top: -50%;
+	font-weight: 300;
+	font-size: 30px;
 }
 
 
